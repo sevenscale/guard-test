@@ -60,6 +60,7 @@ module Guard
 
         # track whether the changed tests failed for the next change
         @last_failed = true
+        throw :task_has_failed
       end
     end
 
